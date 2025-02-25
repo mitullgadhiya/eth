@@ -1,6 +1,5 @@
 // General Icons
 import CreatorFeeImage from "./creator-fee.svg"
-import EthHomeIcon from "./eth-home-icon.svg"
 import { HighlightDarkIcon } from "./HighlightDarkIcon"
 import { HighlightIcon } from "./HighlightIcon"
 import LiquidityImage from "./liquidity-share.svg"
@@ -10,7 +9,6 @@ import RamiHomeIcon from "./rami-home-icon.svg"
 
 export {
   CreatorFeeImage,
-  EthHomeIcon,
   HighlightDarkIcon,
   HighlightIcon,
   LiquidityImage,
