@@ -114,7 +114,7 @@ export const useBentoBox = () => {
     },
     {
       title: "4.",
-      children: "You can multiply your Ramicoin portfolio by staking it and start earning a passive incomein Ramicoin itself.",
+      children: "You can multiply your Ramicoin portfolio by staking it and start earning a passive income in Ramicoin itself.",
       action: "Stake Ramicoin",
       href: "/stake/",
       imgSrc: BoostPortfolioImage,
