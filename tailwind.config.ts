@@ -1,11 +1,14 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin"
+import { screens } from "./lib/utils/screen"
 
-import { screens } from "./src/lib/utils/screen"
-
-const config = {
+const config: Config = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   darkMode: ["selector"],
-  content: ["./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
     extend: {
@@ -336,6 +339,5 @@ const config = {
       )
     }),
   ],
-} satisfies Config
-
-export default config
+};
+export default config;
