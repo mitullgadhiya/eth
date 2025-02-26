@@ -18,7 +18,6 @@ export type BentoCardProps = HTMLAttributes<HTMLDivElement> & {
   imgHeight?: number
   title: string
   eventName: string
-  eventCategory: string
 }
 
 const BentoCard = ({
