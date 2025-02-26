@@ -1,10 +1,8 @@
-import { useState } from "react"
-import type { MotionProps } from "framer-motion"
+import { useState } from "react";
+import type { MotionProps } from "framer-motion";
 
 export const useNavMenu = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const onClose = () => setIsOpen(false)
+  const [activeSection, setActiveSection] = useState<string | null>(null);
 
   const containerVariants: MotionProps["variants"] = {
     open: {
@@ -15,11 +13,18 @@ export const useNavMenu = () => {
     closed: {
       opacity: 0,
     },
-  }
+  };
+
+  const isOpen = activeSection !== null;
+
+  const onClose = () => {
+    setActiveSection(null);
+  };
 
   return {
+    activeSection,
     isOpen,
     containerVariants,
     onClose,
-  }
-}
+  };
+};
