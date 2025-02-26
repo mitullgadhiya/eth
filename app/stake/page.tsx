@@ -73,7 +73,7 @@ const paths: Array<IDevelopersPath> = [
   },
 ]
 
-const DevelopersPage = () => {
+const Home = () => {
 
   return (
     <Page>
@@ -101,4 +101,4 @@ const DevelopersPage = () => {
   )
 }
 
-export default DevelopersPage
+export default Home

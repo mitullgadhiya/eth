@@ -126,7 +126,7 @@ const Image400 = ({ src }: Pick<ImageProps, "src">) => (
 )
 
 
-const WhatIsRamiCoinPage = () => {
+const Home = () => {
 
   const locale = usePathname()
   // const localeForNumberFormat = locale;
@@ -429,4 +429,4 @@ const WhatIsRamiCoinPage = () => {
   )
 }
 
-export default WhatIsRamiCoinPage
+export default Home

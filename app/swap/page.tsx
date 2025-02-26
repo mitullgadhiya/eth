@@ -17,7 +17,7 @@ export const StyledCard = (props: ComponentPropsWithRef<typeof Card>) => (
   />
 )
 
-const SwapPage = () => {
+const Home = () => {
 
   const heroContent = {
     title: "Ramicoin Exchange",
@@ -54,4 +54,4 @@ const SwapPage = () => {
   )
 }
 
-export default SwapPage
+export default Home
