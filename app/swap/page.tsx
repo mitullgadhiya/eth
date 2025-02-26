@@ -1,21 +1,9 @@
-'use client'
-
-import { ComponentPropsWithRef } from "react"
-
-import Card from "@/components/Card"
 import MySwapBox from "@/components/DJ/MySwapBox"
 import MainArticle from "@/components/MainArticle"
 import PageHero from "@/components/PageHero"
 import { Divider } from "@/components/ui/divider"
 
 import HeroImage from "../../public/images/wallets/wallet-hero.png"
-
-export const StyledCard = (props: ComponentPropsWithRef<typeof Card>) => (
-  <Card
-    className="m-4 min-w-[280px] max-w-full flex-1 bg-background p-6 md:max-w-[46%] lg:max-w-[31%]"
-    {...props}
-  />
-)
 
 const Home = () => {
 
