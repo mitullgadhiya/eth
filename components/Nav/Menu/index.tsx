@@ -16,7 +16,7 @@ type NavMenuProps = BaseHTMLAttributes<HTMLDivElement> & {
 }
 
 const Menu = ({ sections, ...props }: NavMenuProps) => {
-  const { activeSection, handleSectionChange } = useNavMenu(sections)
+  const { activeSection, handleSectionChange } = useNavMenu()
 
   return (
     <div {...props}>
