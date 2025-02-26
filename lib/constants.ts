@@ -1,4 +1,3 @@
-import { NavSectionKey } from "@/components/Nav/types"
 
 import type { CommunityBlog } from "./types"
 
