@@ -2,7 +2,6 @@ import type { StaticImageData } from "next/image"
 
 import type {
   CommonHeroProps,
-  FileContributor,
   Frontmatter,
   Lang,
   ToCItem,
@@ -100,7 +99,6 @@ export interface MdPageContent {
   frontmatter: Frontmatter
   tocItems: ToCItem[]
   contentNotTranslated: boolean
-  contributors: FileContributor[]
 }
 
 // Local environment framework
