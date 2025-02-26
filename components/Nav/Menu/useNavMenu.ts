@@ -15,6 +15,10 @@ export const useNavMenu = () => {
     },
   };
 
+  const handleSectionChange = (activeSection: string) => {
+    setActiveSection(activeSection);
+  };
+
   const isOpen = activeSection !== null;
 
   const onClose = () => {
