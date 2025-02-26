@@ -92,7 +92,7 @@ export const FROM_QUERY = "from"
 export const NAV_PY = 4
 
 // Determines the order of sections in the menu
-export const SECTION_LABELS: NavSectionKey[] = [
+export const SECTION_LABELS: = [
   "learn",
   "use",
   "build",
