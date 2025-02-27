@@ -106,11 +106,11 @@ export default function MySwapBox() {
                         value={inputAmount || ''} // Bind the value to inputAmount
                         onChange={(e) => handleInputChange(e, false)} // false for USDT input
                     />
-                    <span className="flex justify-between items-center space-x-2">
+                    <span className="flex flex-col justify-end items-end opacity-60">
+                        <Image src="/wallet.svg" alt="wallet" width={20} height={20} />
                         <p className="text-black">
                             {isConnected && UsdtToken2Balance ? `${UsdtToken2Balance}` : "0"}
                         </p>
-                        <Image src="/wallet.svg" alt="wallet" width={20} height={20} />
                     </span>
                 </div>
             </div>
@@ -135,11 +135,11 @@ export default function MySwapBox() {
                         value={ramiAmount || ''} // Bind the value to ramiAmount
                         onChange={(e) => handleInputChange(e, true)} // true for RAMI input
                     />
-                    <span className="flex justify-between items-center space-x-2">
+                    <span className="flex flex-col justify-end items-end opacity-60">
+                        <Image src="/wallet.svg" alt="wallet" width={20} height={20} />
                         <p className="text-black">
                             {isConnected && RamiToken1Balance ? `${RamiToken1Balance}` : "0"}
                         </p>
-                        <Image src="/wallet.svg" alt="wallet" width={20} height={20} />
                     </span>
                 </div>
             </div>
