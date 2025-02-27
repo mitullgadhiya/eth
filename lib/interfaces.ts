@@ -5,16 +5,7 @@ import type {
   Frontmatter,
   Lang,
   ToCItem,
-  TranslationKey,
 } from "@/lib/types"
-
-export interface DeveloperDocsLink {
-  id: TranslationKey
-  href: string
-  path: string
-  description: TranslationKey
-  items: DeveloperDocsLink[]
-}
 
 /**
  * Layout interface
