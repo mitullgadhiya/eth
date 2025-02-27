@@ -100,7 +100,7 @@ export default function MySwapBox() {
                     <input
                         placeholder="0"
                         type="number"
-                        className="w-full py-2 overflow-hidden text-2xl rounded-md bg-transparent placeholder:text-black text-black focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 pr-10
+                        className="w-[90%] py-2 overflow-hidden text-2xl rounded-md bg-transparent placeholder:text-black text-black focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 pr-10
              [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
                         disabled={!isConnected}
                         value={inputAmount || ''} // Bind the value to inputAmount
@@ -129,7 +129,7 @@ export default function MySwapBox() {
                     <input
                         placeholder="0"
                         type="number"
-                        className="w-full py-2 overflow-hidden text-2xl rounded-md bg-transparent placeholder:text-black text-black focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 pr-10
+                        className="w-[90%] py-2 overflow-hidden text-2xl rounded-md bg-transparent placeholder:text-black text-black focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 pr-10
              [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
                         disabled={!isConnected}
                         value={ramiAmount || ''} // Bind the value to ramiAmount
