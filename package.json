@@ -9,8 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@reown/appkit": "^1.1.7",
-    "@reown/appkit-adapter-wagmi": "^1.1.7",
     "@docsearch/react": "^3.5.2",
     "@next/bundle-analyzer": "^15.1.7",
     "@radix-ui/react-accordion": "^1.2.0",
@@ -21,6 +19,8 @@
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.2",
     "@radix-ui/react-visually-hidden": "^1.1.0",
+    "@reown/appkit": "^1.1.7",
+    "@reown/appkit-adapter-wagmi": "^1.1.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^10.13.0",
@@ -39,7 +39,8 @@
     "tailwindcss-animate": "^1.0.7",
     "usehooks-ts": "^3.1.0",
     "viem": "^2.23.2",
-    "wagmi": "^2.14.11"
+    "wagmi": "^2.14.11",
+    "web3": "^4.16.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
