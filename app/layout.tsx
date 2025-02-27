@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import ContextProvider from "@/context/kit";
+import ContextProvider from "@/context";
 import { headers } from "next/headers";
 import { TooltipProvider } from "@radix-ui/react-tooltip"
 import ThemeProvider from "@/components/ThemeProvider"
 import "@/styles/global.css"
 import Footer from "@/components/Footer"
 import Nav from "@/components/Nav"
+import { FetchTokenBalanceProvider } from "@/context/FetchTokenBalance";
 
 
 export const metadata: Metadata = {
@@ -22,12 +23,14 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const cookies = headers().get('cookie')
+
+  const headersData = await headers();
+  const cookies = headersData.get('cookie');
 
   return (
     <html lang="en">
@@ -38,15 +41,17 @@ export default function RootLayout({
         className={`antialiased`}
       >
         <ContextProvider cookies={cookies}>
-          <ThemeProvider>
-            <TooltipProvider>
-              <div className="mx-auto max-w-screen-2xl">
-                <Nav />
-                {children}
-                <Footer />
-              </div>
-            </TooltipProvider>
-          </ThemeProvider>
+          <FetchTokenBalanceProvider>
+            <ThemeProvider>
+              <TooltipProvider>
+                <div className="mx-auto max-w-screen-2xl">
+                  <Nav />
+                  {children}
+                  <Footer />
+                </div>
+              </TooltipProvider>
+            </ThemeProvider>
+          </FetchTokenBalanceProvider>
         </ContextProvider>
       </body>
     </html>
