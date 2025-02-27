@@ -10,7 +10,16 @@ export const screens = {
   "2xl": "1536px",
 } satisfies ScreensConfig
 
-export const breakpointAsNumber = Object.entries(screens).reduce(
+// export const breakpointAsNumber = Object.entries(screens).reduce(
+//   (acc, curr) => {
+//     const [breakpoint, value] = curr
+//     acc[breakpoint] = +value.split("px")[0]
+//     return acc
+//   },
+//   {}
+// ) as Record<BreakpointKey, number>
+
+export const breakpointAsNumber = Object.entries(screens).reduce<Record<string, number>>(
   (acc, curr) => {
     const [breakpoint, value] = curr
     acc[breakpoint] = +value.split("px")[0]
@@ -18,3 +27,4 @@ export const breakpointAsNumber = Object.entries(screens).reduce(
   },
   {}
 ) as Record<BreakpointKey, number>
+
